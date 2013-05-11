@@ -1,6 +1,14 @@
-%h2
-  Welcome Page
-
+#header
+  %h1 Momdromat
+  %h2 Remember when your mom did your laundry? We thought that was better, too.
+  #social
+    %a{:href => "http://www.twitter.com/momdromat", :target => "_blank"}
+      %i.icon-twitter.icon
+    %a{:href => "http://www.facebook.com/pages/Momdromat/504312789618010", :target => "_blank"}
+      %i.icon-facebook.icon
+    %a{:href => "#"}
+      %i.icon-google-plus.icon
+      
 %h3{id: "message"}
 
 = form_for @person, url: register_email_path, remote: true do |f|
