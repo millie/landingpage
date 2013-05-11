@@ -1,18 +1,51 @@
-#header
-  %h1 Momdromat
-  %h2 Remember when your mom did your laundry? We thought that was better, too.
-  #social
-    %a{:href => "http://www.twitter.com/momdromat", :target => "_blank"}
-      %i.icon-twitter.icon
-    %a{:href => "http://www.facebook.com/pages/Momdromat/504312789618010", :target => "_blank"}
-      %i.icon-facebook.icon
-    %a{:href => "#"}
-      %i.icon-google-plus.icon
-      
-%h3{id: "message"}
+.container-outside
+  .container
+    #header
+      %h1 Momdromat
+      #social
+        %a{:href => "http://www.twitter.com/momdromat", :target => "_blank"}
+          %i.icon-twitter.icon
+        %a{:href => "http://www.facebook.com/pages/Momdromat/504312789618010", :target => "_blank"}
+          %i.icon-facebook.icon
+        %a{:href => "#"}
+          %i.icon-google-plus.icon
 
-= form_for @person, url: register_email_path, remote: true do |f|
-  = f.label "Email", "email"
-  = f.email_field :email
-  = f.submit "Submit"
-  
+
+    #cta.hero-unit   
+      %h2 Remember when Mom did your laundry?
+      %h3 We thought that was better, too.
+      %h3{id: "message"}
+      = form_for @person, url: register_email_path, html: {class: "form-inline"}, remote: true do |f|
+        %span.form_title.input-title Get started now:
+        = f.email_field :email, placeholder: "Email Address", class: "input-xlarge input-title"
+        = f.text_field :zip_code, placeholder: "Zip Code", class: "input-medium input-title"
+        %button.btn.btn-primary.btn-large.btn-yellow Wash me!
+      %h4 Our army of nurturing moms is just waiting to wash and fold your duds! Literally, just waiting.
+
+
+
+.container-grass
+  #bottom.container
+    .row-fluid
+      %h3 Doing your laundry has never been easier!  Your real mom will be so proud!
+    #steps.row-fluid 
+      .span4
+        %i.icon-mobile-phone.jumbotron-icon
+        %h4 Place Your Order
+        %p Assemble your dirty laundry in our handy hamper (free with first order). Tell mom just how you like it: detergent preferences, dryer sheets, she's got you covered.    
+      
+      .span4
+        %i.icon-bullhorn.jumbotron-icon
+        %h4 Call For Mom
+        %p Schedule your pickup and one of our nearby, nurturing moms will be by soon to collect your dirty duds. You can track her progress on our website.
+
+      .span4
+        %i.icon-magic.jumbotron-icon
+        %h4 Magically Clean Clothes!
+        %p Presto! Mom drops off your clean and folded laundry. The only thing she won't do is put it away in your dresser.  Sorry, technology can only do so much.
+
+    
+  #footer
+    .container
+      %p.credit
+        Copyright © 2013, Momdromat LLC

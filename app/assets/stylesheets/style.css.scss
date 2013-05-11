@@ -1,5 +1,5 @@
 body {
-	background: url(skybg.png) repeat-x #F3F9FD;
+	background: #AFDDF3;
 }
 
 .center {
@@ -21,6 +21,10 @@ h1 {
 }
 
 h2, h3, h4, h5, h6 {
+	font-family: 'Roboto Slab', sans-serif;
+}
+
+.btn {
 	font-family: 'Roboto Slab', sans-serif;
 }
 
@@ -50,4 +54,156 @@ h2, h3, h4, h5, h6 {
 
 #social i:hover {
 	color: #2BA58E;
+}
+
+.container-outside {
+	background: url(clothesline.png) no-repeat center 260px;
+}
+
+
+.container-grass {
+	background: url(green_hill.png) transparent center 100px no-repeat;
+}
+
+#cta {
+	background: none;
+	padding-top: 30px;
+	margin-bottom: 10px;
+	padding-bottom: 20px;
+}
+
+#cta h2, #cta h3, #cta h4 {	
+	text-align: center;
+}
+
+#cta h2 {
+	font-size: 35px;
+	color: #17705E;
+}
+
+#cta h3 {
+	font-size: 25px;
+	font-weight: 400;
+}
+
+#cta h4 {
+	font-weight: 400;
+}
+
+
+#cta form {
+	text-align: center;
+	padding-top: 130px;
+}
+
+#cta span {
+	color: #2BA58E;
+	font-weight: 400;
+}
+
+.input-title {
+  height: 40px !important;
+  font-size: 1.4em !important;
+  line-height: 40px !important;
+	font-family: 'Roboto Slab', sans-serif;
+}
+
+.form_title {
+	top: 5px;
+	margin-right: 12px;
+	position: relative;
+}
+
+.input-title.input-medium {
+	width: 120px;
+}
+
+.input-title.input-xlarge {
+    width: 330px;
+}
+
+#cta input {
+	margin-right: 15px;
+}
+
+#steps {
+	text-align: center;
+	margin-top: 10px;
+	margin-bottom: 30px;
+}
+
+#steps h3 {
+	font-size: 1.2em;
+}
+
+#steps p {
+	font-size: 1.1em;
+}
+
+.btn-large {
+	font-size: 1.3em;
+}
+
+.btn-yellow {
+    background-color: #E8B236;
+    background-image: linear-gradient(to bottom, #EABA46, #E8B236);
+    background-repeat: repeat-x;
+    border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+    color: #000;
+    text-shadow: 0 -1px 0 rgba(255, 255, 255, 0.25);
+}
+
+.btn-yellow:hover, .btn-yellow:focus, .btn-yellow:active {
+    background-color: #D6920B;
+    background-image: linear-gradient(to bottom, #D6920B, #D6920B);
+}
+
+#bottom h3 {
+	color: #EC6919;
+	font-size: 28px;
+	font-weight: 400;
+	text-align: center;
+}
+
+#steps i {
+	padding: 20px;
+	background-color: #fff;
+	border-radius: 80px;
+	height: 120px;
+	width: 120px;
+	display: inline-block;
+	color: #055646;
+	margin-bottom: 10px;
+}
+
+#steps i:hover {	
+	background-color: #EFCB75;
+	color: #EC6919;
+}
+
+#steps .icon-mobile-phone {
+	font-size: 9em;
+}
+
+
+#steps .icon-bullhorn {
+	font-size: 7em;
+	line-height: 1.25em;
+}
+
+#steps p{
+	margin-right: 20px;
+	margin-left: 20px;
+}
+
+#steps .icon-magic {
+	font-size: 6.5em;
+	line-height: 1.45em;
+}
+
+#footer {
+	border-top: 1px solid #055646;
+	background-color: #055646;
+	padding: 10px 0px 30px 0px;
+	color: #fff;
 }
