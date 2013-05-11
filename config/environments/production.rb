@@ -60,5 +60,9 @@ SbxSplashPage::Application.configure do
 
   # Send deprecation notices to registered listeners
   config.active_support.deprecation = :notify
+  
+    
+  ENV["MAILCHIMP_API_KEY"] = '751aa615f2689a94bf1e0f8f47ece083-us7'
+  ENV["MAILCHIMP_LIST_ID"] = 'db2b032578'
 
 end
