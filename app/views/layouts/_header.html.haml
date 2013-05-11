@@ -1,0 +1,15 @@
+-if params[:controller] == "welcome" and params[:action] == "index"
+  -css_class = "container"
+-else
+  -css_class = "container container-narrow"
+%div{:class => css_class}
+  #header
+    %a{:href => root_path}
+      %h1 Momdromat
+    #social
+      %a{:href => "http://www.twitter.com/momdromat", :target => "_blank"}
+        %i.icon-twitter.icon
+      %a{:href => "http://www.facebook.com/pages/Momdromat/504312789618010", :target => "_blank"}
+        %i.icon-facebook.icon
+      %a{:href => "#"}
+        %i.icon-google-plus.icon

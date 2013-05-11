@@ -1,51 +1,53 @@
+
+        
 .container-outside
-  .container
-    #header
-      %h1 Momdromat
-      #social
-        %a{:href => "http://www.twitter.com/momdromat", :target => "_blank"}
-          %i.icon-twitter.icon
-        %a{:href => "http://www.facebook.com/pages/Momdromat/504312789618010", :target => "_blank"}
-          %i.icon-facebook.icon
-        %a{:href => "#"}
-          %i.icon-google-plus.icon
 
-
-    #cta.hero-unit   
-      %h2 Remember when Mom did your laundry?
-      %h3 We thought that was better, too.
-      %h3{id: "message"}
-      = form_for @person, url: register_email_path, html: {class: "form-inline"}, remote: true do |f|
-        %span.form_title.input-title Get started now:
-        = f.email_field :email, placeholder: "Email Address", class: "input-xlarge input-title"
-        = f.text_field :zip_code, placeholder: "Zip Code", class: "input-medium input-title"
-        %button.btn.btn-primary.btn-large.btn-yellow Wash me!
-      %h4 Our army of nurturing moms is just waiting to wash and fold your duds! Literally, just waiting.
-
+  #cta.hero-unit   
+    %h2 Remember when Mom did your laundry?
+    %h3 We thought that was better, too.
+    %h3{id: "message"}
+    = form_for @person, url: register_email_path, html: {class: "form-inline"}, remote: true do |f|
+      %span.form_title.input-title Get started now:
+      = f.email_field :email, placeholder: "Email Address", class: "input-xlarge input-title"
+      = f.text_field :zip_code, placeholder: "Zip Code", class: "input-medium input-title"
+      %button.btn.btn-primary.btn-large.btn-yellow Wash me!
 
 
 .container-grass
   #bottom.container
     .row-fluid
-      %h3 Doing your laundry has never been easier!  Your real mom will be so proud!
+      %h3 
+        We’ve got local moms ready to pick up, wash, fold and deliver
+        %br your laundry just the way you like it for only $1.50 a pound.
     #steps.row-fluid 
       .span4
         %i.icon-mobile-phone.jumbotron-icon
-        %h4 Place Your Order
-        %p Assemble your dirty laundry in our handy hamper (free with first order). Tell mom just how you like it: detergent preferences, dryer sheets, she's got you covered.    
+        %h4 Choose Your Laundry Settings
+        %p Let us know your favorite detergent, whether you want to use dryer sheets and what temperature the water should be, or just leave it up to mom (she knows best!).  
       
       .span4
         %i.icon-bullhorn.jumbotron-icon
-        %h4 Call For Mom
-        %p Schedule your pickup and one of our nearby, nurturing moms will be by soon to collect your dirty duds. You can track her progress on our website.
+        %h4 Schedule Your Pickup
+        %p Schedule a convenient pickup time and one of our moms will pick up your laundry, give it the best cleaning of its life and have it back to you in about 24 hours.
 
       .span4
         %i.icon-magic.jumbotron-icon
-        %h4 Magically Clean Clothes!
-        %p Presto! Mom drops off your clean and folded laundry. The only thing she won't do is put it away in your dresser.  Sorry, technology can only do so much.
+        %h4 Relish Your Cleanliness
+        %p 
+          Bask in the glow of hassle-free laundry, the way it used to be. Go to the park, see a movie, take a hike, maybe even go to work. 
+          %br Mom's got you covered!
 
-    
-  #footer
-    .container
-      %p.credit
-        Copyright © 2013, Momdromat LLC
+
+    -if false
+      .row-fluid
+        %h4
+          The Momdromat Advantage
+      .row-fluid 
+        .span3
+          %p Your laundry is done by a team of dedicated, caring local moms that are ready to wash, dry, iron and fold your clothes.
+        .span3
+          %p We’ll make sure that Mom knows just the way you like it, because you can tell her.  Specify preferred detergent types, dryer settings, pick-up and drop-off times and more!
+        .span3
+          %p Your laundry is done at a price your mom would approve of, starting at $1.50 per pound or about $40 a month for our average customer.
+        .span3
+          %p Our technology is so easy, even your mom could understand it!  We make it super easy to specify preferences, coordinate hand-offs and even track your order in progress.

@@ -1,0 +1,58 @@
+
+        
+.container.container-small
+  .row
+    .span2.photos
+      =image_tag ("moms/mom1.jpg"), alt: "Jody Franklin", class: "img-polaroid"
+      %h4 Jody F.
+      =image_tag ("moms/mom2.jpg"), alt: "Shelby Vinder", class: "img-polaroid"
+      %h4 Shelby V.
+      =image_tag ("moms/mom3.jpg"), alt: "Keith Barthe", class: "img-polaroid"
+      %h4 Keith B.
+      %p.small *You don't have to be a mom, you just have to be nurturing.
+      =image_tag ("moms/mom4.jpg"), alt: "Jeanne Whitmore", class: "img-polaroid"
+      %h4 Jeanne W.
+    .span5
+      %p
+      #wufoo-z7x3p3
+        Fill out our
+        = succeed "." do
+          %a{:href => "http://momdromat.wufoo.com/forms/z7x3p3"} online form
+        :javascript
+          var z7x3p3;(function(d, t) {
+          var s = d.createElement(t), options = {
+          'userName':'momdromat', 
+          'formHash':'z7x3p3', 
+          'autoResize':true,
+          'height':'747',
+          'async':true,
+          'header':'show'};
+          s.src = ('https:' == d.location.protocol ? 'https://' : 'http://') + 'wufoo.com/scripts/embed/form.js';
+          s.onload = s.onreadystatechange = function() {
+          var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return;
+          try { z7x3p3 = new WufooForm();z7x3p3.initialize(options);z7x3p3.display(); } catch (e) {}};
+          var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr);
+          })(document, 'script');
+  
+  %hr
+  #how_it_works.row
+    .span8{:style => "margin-left: 80px"}
+      %h3 Moms make the Momdromat world go round!
+      %p We need awesome, caring people to take care of our customers.  You don't need to be a mom, but you do need to be nurturing!
+      %p We rely on you to make our customers happy, to make our service rock and to spread the gospel of momdromat.  You power this business so let's start a movement together.  Clean the world!
+      %h4 How It Works
+      %p Momdromat is laundry like your mom used to do it.  As a Momdromat Mom you tell us when you want to work and we match you with nearby customers who need their laundry done.  We'll let you know all the nitty-gritty details, from your customers' addresses, pick-up and drop-off dates and times, detergent preferences and more.  Once the load of laundry is complete, you get paid!  Forget money laundering, this has got to be the cleanest way to make an extra buck!
+      %h4 What We Look For In a Mom
+      %p You don't actually need to be a mom!  We just want you to be a nice, nurturing person who really cares about doing laundry the right way.  You'll need to be in physical condition that allows you to lift a laundry hamper (up to 40 lbs), and you'll need a way (usually a car) to pick up and drop off laundry at your customers' homes.  If that sounds like you, apply now using the application form at the top of this page!
+      %h4 What Happens Next
+      %p When you apply, we'll do our best to review your application within 3 business days. Once you've been approved, we'll get you all set up with a Momdromat Mom account so you can login to our website and let us know your availability, the distance you're willing to go to pick-up and drop-off and how many loads you want to do each week.  
+      %h4 What's In It For You
+      %p You get paid about $10 per load of laundry you do, with a $15 minimum payout per customer order.  We direct deposit our Moms' paychecks into their bank accounts every Friday, just in time for the weekend!
+      %h4 Your Working Hours
+      %p With Momdromat, you are in complete control of your schedule.  You'll only take orders when you want to.  We promise, we'll never bug you to get to work! 
+      %p &nbsp;
+      %h2 Clean the world, with Momdromat!
+      %p{:style => "text-align: center"}
+        %a
+          %button.btn.btn-primary.btn-large.btn-yellow Apply Now!
+      %p &nbsp;

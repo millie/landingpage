@@ -1,5 +1,11 @@
+
+
 body {
-	background: #AFDDF3;
+	background: url("skybg.png") repeat-x #EFF8FC;
+}
+
+body#welcome_index {
+	background: #AFDDF3 url("clouds.png") repeat-x center 100px;
 }
 
 .center {
@@ -8,17 +14,66 @@ body {
      margin-right: auto;
 }
 
-
-h1 {
+ h1 {
 	color: #fff;
-	background: url(logo-sign.png) no-repeat;
+	background: url(logo-sign-small.png) no-repeat;
 	text-indent: -9999px;
 	overflow: hidden;
+	margin: 0px 0px 0px 10px;
+	padding: 0px;
+	height: 80px;
+	width: 300px;
+}
+
+h2 {
+	color: #16705D;
+}
+
+h3 {
+	color: #D77B42;
+}
+
+#welcome_index h3 {
+	color: #333;
+}
+
+
+#welcome_index h1 {
 	margin: 0px auto;
+	background: url(logo-sign.png) no-repeat;
 	padding: 0px;
 	height: 150px;
 	width: 629px;
 }
+
+.container-narrow, .container-small {
+	width: 55%;
+}
+
+
+.container-small {
+	margin: 30px auto;
+	padding: 10px;
+	background-color: #fff;
+	border-radius: 10px;
+	border: 1px solid #ccc;
+}
+
+.container-small .span2 {
+	text-align: center;
+}
+
+.container-small img {
+	margin: 10px 0px 0px 0px;
+	width: 80%;
+}
+
+.container-small .span5 {
+	width: 66%;
+	margin-left: 50px;
+}
+
+
 
 h2, h3, h4, h5, h6 {
 	font-family: 'Roboto Slab', sans-serif;
@@ -57,7 +112,7 @@ h2, h3, h4, h5, h6 {
 }
 
 .container-outside {
-	background: url(clothesline.png) no-repeat center 260px;
+	background: url(clothesline.png) no-repeat center 100px;
 }
 
 
@@ -69,7 +124,7 @@ h2, h3, h4, h5, h6 {
 	background: none;
 	padding-top: 30px;
 	margin-bottom: 10px;
-	padding-bottom: 20px;
+	padding-bottom: 0px;
 }
 
 #cta h2, #cta h3, #cta h4 {	
@@ -206,4 +261,28 @@ h2, h3, h4, h5, h6 {
 	background-color: #055646;
 	padding: 10px 0px 30px 0px;
 	color: #fff;
+}
+
+#footer a{
+	color: #fff;
+}
+
+
+
+.photos h4 {
+	color: #848484;
+	font-style: italic;
+	margin: 0px;
+	padding: 0px;
+	text-align: center;
+}
+
+
+p.small {
+	font-size: .8em;
+	line-height: .9em;
+}
+
+#how_it_works h3, #how_it_works a, #how_it_works h2 {
+	text-align: center;
 }
