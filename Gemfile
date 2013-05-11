@@ -3,8 +3,11 @@ source 'https://rubygems.org'
 gem 'rails', '3.2.9'
 gem "thin", "~> 1.5.0"
 
+gem 'mysql2'
+
 group :production do
   gem 'newrelic_rpm'
+  gem 'pg'
 end
 
 group :assets do
