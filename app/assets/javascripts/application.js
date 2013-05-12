@@ -16,5 +16,5 @@
 //= require_tree .
 
 $('form').on('submit', function(){
-  $('#message').html("<h3 class='label'>Adding email address...</h3>")
+  $('#message').html("<h3 class='label'>Adding email address...</h3>");
 });
