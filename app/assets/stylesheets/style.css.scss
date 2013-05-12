@@ -26,7 +26,7 @@ body#welcome_index {
 }
 
 h2 {
-	color: #16705D;
+	color: #168C72;
 }
 
 h3 {
@@ -121,7 +121,7 @@ h2, h3, h4, h5, h6 {
 }
 
 #cta {
-	background: none;
+	background:none;
 	padding-top: 30px;
 	margin-bottom: 10px;
 	padding-bottom: 0px;
@@ -133,7 +133,7 @@ h2, h3, h4, h5, h6 {
 
 #cta h2 {
 	font-size: 35px;
-	color: #17705E;
+	color: #168C72;
 }
 
 #cta h3 {
@@ -145,10 +145,29 @@ h2, h3, h4, h5, h6 {
 	font-weight: 400;
 }
 
+h3.label {
+	background: none;
+	border-radius: 20px;
+	padding: 20px;
+	width: 70%;
+}
 
-#cta form {
+h3.label.float {
+	width: auto;
+	display: inline;
+	padding: 10px;
+	top: 5px;
+	position: relative;
+}
+
+
+
+#cta #message {
 	text-align: center;
-	padding-top: 130px;
+	padding-top: 70px;
+	padding-bottom: 20px;
+	max-width: 1100px;
+	margin: 0px auto;
 }
 
 #cta span {
@@ -213,19 +232,24 @@ h2, h3, h4, h5, h6 {
     background-image: linear-gradient(to bottom, #D6920B, #D6920B);
 }
 
-#bottom h3 {
-	color: #EC6919;
+h3.bottom {
 	font-size: 28px;
 	font-weight: 400;
 	text-align: center;
+	color: #EC6919 !important;
 }
+
+#bottom {
+	padding-top: 20px;
+}
+
 
 #steps i {
 	padding: 20px;
 	background-color: #fff;
 	border-radius: 80px;
-	height: 120px;
-	width: 120px;
+	height: 80px;
+	width: 80px;
 	display: inline-block;
 	color: #055646;
 	margin-bottom: 10px;
@@ -237,13 +261,13 @@ h2, h3, h4, h5, h6 {
 }
 
 #steps .icon-mobile-phone {
-	font-size: 9em;
+	font-size: 6em;
 }
 
 
 #steps .icon-bullhorn {
-	font-size: 7em;
-	line-height: 1.25em;
+	font-size: 4em;
+	line-height: 1.5em;
 }
 
 #steps p{
@@ -252,14 +276,14 @@ h2, h3, h4, h5, h6 {
 }
 
 #steps .icon-magic {
-	font-size: 6.5em;
-	line-height: 1.45em;
+	font-size: 3.5em;
+	line-height: 1.75em;
 }
 
 #footer {
 	border-top: 1px solid #055646;
 	background-color: #055646;
-	padding: 10px 0px 30px 0px;
+	padding: 10px 0px 60px 0px;
 	color: #fff;
 }
 
