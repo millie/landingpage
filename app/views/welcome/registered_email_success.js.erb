@@ -22,8 +22,8 @@ _gaq.push(['_trackPageview', '/thanks']);
   var value = 100;
   var label = "qfvyCITo2wQQ5K3s1gM";
   var url = encodeURI(location.href);
-
-  var trackUrl = "http://www.googleadservices.com/pagead/conversion/"+goalId+"/&amp;label="+label+"&amp;guid=ON&amp;script=0";
+  
+  var trackUrl = "http://www.googleadservices.com/pagead/conversion/"+goalId+"/?random="+randomNum+"&label="+label+"&guid=ON&script=0&value="+value+"&url="+url;
   img.src = trackUrl;
   document.body.appendChild(img);
   
